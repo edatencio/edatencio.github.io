@@ -2549,8 +2549,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-right h1 {
   font-size: 45px;
-  text-transform: uppercase;
-
 }
 
 @media (max-width: 991px) {
