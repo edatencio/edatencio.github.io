@@ -2781,6 +2781,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 100%;
   transition: .5s ease;
   backface-visibility: hidden;
+  border-radius: 5px;
 }
 
 .middle {
@@ -4434,7 +4435,16 @@ dl.accordion.time-line:before {
   margin-bottom: 5px;
 }
 
-.contact-icon,
+.contact-icon {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--accent-color-a);
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  width: 30px;
+}
+
 .contact-page-area .address-wrap .single-contact-address .lnr {
   font-size: 20px;
   font-weight: 500;
