@@ -216,11 +216,13 @@ h6 {
 h1,
 .h1 {
   font-size: 36px;
+  font-family: "Raleway", sans-serif;
 }
 
 h2,
 .h2 {
   font-size: 30px;
+  font-family: "Raleway", sans-serif;
 }
 
 h3,
