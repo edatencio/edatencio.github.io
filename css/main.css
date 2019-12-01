@@ -2534,6 +2534,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 700px !important;
 }
 
+.banner-right {
+  margin-top: 100px;
+
+}
+
 .banner-right h6 {
   text-transform: uppercase;
   font-weight: 400;
@@ -2543,6 +2548,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .banner-right h1 {
   font-size: 45px;
   text-transform: uppercase;
+
 }
 
 @media (max-width: 991px) {
@@ -2555,6 +2561,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .banner-right {
+    margin-top: 150px;
     margin-bottom: 50px;
   }
 }
@@ -2562,6 +2569,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 767px) {
   .banner-right {
     text-align: center;
+    margin-top: 0px;
   }
 }
 
@@ -4394,6 +4402,20 @@ dl.accordion.time-line:before {
   }
 }
 
+.banner-area .single-contact-address {
+  height: 30px;
+}
+
+.social-icon {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.banner-contact {
+  display: inline-block !important;
+}
+
 .contact-page-area .address-wrap .single-contact-address {
   margin-bottom: 8px;
 }
@@ -4404,8 +4426,9 @@ dl.accordion.time-line:before {
   margin-bottom: 5px;
 }
 
+.contact-icon,
 .contact-page-area .address-wrap .single-contact-address .lnr {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--accent-color-a);
   margin-right: 30px;
