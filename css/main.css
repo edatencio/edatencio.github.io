@@ -3209,7 +3209,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .timeline ul li:before {
   content: '';
-  background: var(--accent-color-a);
+  background: var(--accent-color-b);
   position: absolute;
   left: 50%;
   top: 40%;
@@ -3228,7 +3228,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .timeline ul li .content {
-  background-color: var(--accent-color-a);
+  background-color: var(--background-color-a);
+  border-width: 2x;
+  border-style: solid;
+  border-color: var(--accent-color-b);
   border-radius: 10px;
   position: relative;
   top: 7px;
@@ -3239,6 +3242,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 .timeline ul li .content h4 {
   padding-bottom: 10px;
   text-align: center;
+
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .timeline ul li .content p {
@@ -3247,7 +3254,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .timeline ul li .content p b {
-  color: #222;
+  color: var(--font-color-b);
+  font-weight: bold;
 }
 
 .timeline ul li:nth-child(odd) .content {
