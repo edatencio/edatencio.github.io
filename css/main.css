@@ -2809,6 +2809,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 5px;
 }
 
+.single-portfolio .relative {
+  background-color: var(--background-color-b);
+  border-radius: 5px;
+}
+
 .single-portfolio:hover .thumb .overlay-bg {
   opacity: .85;
 }
