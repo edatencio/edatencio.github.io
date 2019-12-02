@@ -2624,6 +2624,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 445px;
 }
 
+.home-about-subtitle {
+  padding-bottom: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 /*-------- End home-about Area ------------*/
 /*--------- Start Services Area -------------*/
 .single-services {
