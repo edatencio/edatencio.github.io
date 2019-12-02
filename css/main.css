@@ -65,6 +65,7 @@ $black			: #222;
 body {
   background-color: var(--background-color-a);
   color: var(--font-color-a);
+  letter-spacing: 1px;
 }
 
 /* =================================== */
@@ -78,7 +79,7 @@ body {
 
 ::selection {
   background-color: var(--accent-color-a);
-  color: var(--accent-color-a);
+  color: var(--accent-color-b);
 }
 
 ::-webkit-input-placeholder {
@@ -2124,6 +2125,10 @@ h6 {
   opacity: 0;
 }
 
+#header .logo-blog {
+  opacity: 1 !important;
+}
+
 #header.header-scrolled .logo {
   transition: all 0.5s;
   opacity: 1;
@@ -2147,7 +2152,7 @@ h6 {
 .nav-menu li:hover>a,
 .menu-active,
 .parent-active>.sf-with-ul {
-  color: var(--accent-color-a) !important;
+  color: var(--accent-color-b) !important;
 }
 
 /*--------------------------------------------------------------
@@ -2740,7 +2745,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .portfolio-area .filters ul li.active {
-  color: var(--accent-color-a);
+  color: var(--accent-color-b);
 }
 
 .portfolio-area .filters-content {
@@ -3171,8 +3176,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-content a {
-  color: var(--accent-color-a);
-  font-weight: 300;
+  color: var(--font-color-a);
   font-size: 14px;
 }
 
