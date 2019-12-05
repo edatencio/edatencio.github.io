@@ -572,18 +572,31 @@
 		<!-- <script src="js/vendor/bootstrap.min.js"></script> -->
 		<!-- <script src="js/easing.min.js"></script> -->
 		<!-- <script src="js/hoverIntent.js"></script> -->
-		<script src="js/superfish.min.js"></script>
+		<!-- <script src="js/superfish.min.js"></script> -->
 		<!-- <script src="js/jquery.ajaxchimp.min.js"></script> -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
 		<!-- <script src="js/jquery.tabs.min.js"></script> -->
 		<!-- <script src="js/jquery.nice-select.min.js"></script> -->
-		<script src="js/isotope.pkgd.min.js"></script>
+		<!-- <script src="js/isotope.pkgd.min.js"></script> -->
 		<!-- <script src="js/waypoints.min.js"></script> -->
 		<!-- <script src="js/jquery.counterup.min.js"></script> -->
-		<script src="js/simple-skillbar.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
+		<!-- <script src="js/simple-skillbar.js"></script> -->
+		<!-- <script src="js/owl.carousel.min.js"></script> -->
 		<!-- <script src="js/mail-script.js"></script> -->
-		<script src="js/main.js"></script>
+		<!-- <script src="js/main.js"></script> -->
+
+		<script>
+			$(document).ready(function () {
+				"use strict";
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 100) {
+						$('#header').addClass('header-scrolled');
+					} else {
+						$('#header').removeClass('header-scrolled');
+					}
+				});
+			});
+		</script>
 	</body>
 
 	</html>
