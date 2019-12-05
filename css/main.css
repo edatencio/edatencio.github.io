@@ -2376,7 +2376,7 @@ h6 {
   left: 0;
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
-  display: none;
+  display: none !important;
 }
 
 /* Mobile Nav body classes */
@@ -2543,7 +2543,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-right {
   margin-top: 100px;
-
+  margin-bottom: 25px;
 }
 
 .banner-right h6 {
