@@ -71,6 +71,10 @@ body {
 /* =================================== */
 /*  Basic Style
 /* =================================== */
+.contact-details {
+  font-size: 17px;
+}
+
 ::-moz-selection {
   /* Code for Firefox */
   background-color: var(--accent-color-a);
