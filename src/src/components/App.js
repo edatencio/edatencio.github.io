@@ -9,6 +9,8 @@ import Footer from "./Footer";
 import Copyright from "./Copyright";
 import ScrollToTop from "./ScrollToTop";
 
+import ExperienceData from "../data/ExperienceData";
+
 const App = () =>
 {
     return (
@@ -16,8 +18,8 @@ const App = () =>
             <Navbar />
             <Header />
             <Portfolio />
-            <Timeline label="Experience" />
-            <Timeline label="Education" />
+            <Timeline label="Experience" data={ExperienceData} />
+            {/* <Timeline label="Education" /> */}
             <About />
             {/* <Contact /> */}
             {/* <Footer /> */}
