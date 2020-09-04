@@ -1,4 +1,5 @@
 import React from "react";
+import Carousel from "./Carousel";
 
 const PortfolioModal = (props) =>
 {
@@ -18,12 +19,12 @@ const PortfolioModal = (props) =>
                             <div className="row justify-content-center">
                                 <div className="col-lg-8">
 
-                                    {/* Portfolio Modal - Title*/}
+                                    {/* --- Title --- */}
                                     <h2 className="portfolio-modal-title mb-0">
                                         {props.item.title}
                                     </h2>
 
-                                    {/* Icon Divider*/}
+                                    {/* --- Icon Divider --- */}
                                     <div className="divider-custom divider-light">
                                         <div className="divider-custom-line" />
                                         <div className="divider-custom-icon">
@@ -32,10 +33,14 @@ const PortfolioModal = (props) =>
                                         <div className="divider-custom-line" />
                                     </div>
 
-                                    {/* Portfolio Modal - Image*/}
-                                    <img className="img-fluid rounded mb-5" src={props.item.bannerURL} alt="" />
+                                    {/* --- Image --- */}
+                                    {/*<img className="img-fluid rounded mb-5" src={props.item.bannerURL} alt="" />*/}
 
-                                    {/* Portfolio Modal - Text*/}
+                                    {/* --- Caroussel --- */}
+                                    <Carousel id={"carousel" + props.item.id} images={props.item.images} />
+
+                                    <br />
+                                    {/* --- Text --- */}
                                     <p className="mb-5">{props.item.description}</p>
 
                                     <button className="btn btn-primary" data-dismiss="modal">
