@@ -19,6 +19,13 @@ const Portfolio = () =>
                     <div className="divider-custom-line"></div>
                 </div>
                 <br />
+                {/* Filter buttons */}
+                <div align="center">
+                    <button className="btn btn-default filter-button" data-filter="all">All</button>
+                    <button className="btn btn-default filter-button" data-filter="Unity">Unity</button>
+                    <button className="btn btn-default filter-button" data-filter="React">React</button>
+                    <button className="btn btn-default filter-button" data-filter="Arduino">Arduino</button>
+                </div>
                 {/* Portfolio Grid Items */}
                 <div className="row">
                     {portfolioItems}
