@@ -7,7 +7,7 @@ const TimelineItem = (props) =>
     return (
         <li className={props.inverted ? "timeline-inverted" : ""} id={props.item.id}>
             <div className="timeline-image">
-                <img className="rounded-circle img-fluid" src={props.item.imgURL} alt="" />
+                {/* <img className="rounded-circle img-fluid" src={props.item.imgURL} alt="" /> */}
             </div>
             <div className="timeline-panel">
                 <div className="timeline-heading">

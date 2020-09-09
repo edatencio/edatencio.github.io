@@ -2617,20 +2617,16 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: var(--accent-color-b);
-    border-color: var(--accent-color-b);
+    background-color: var(--accent-color-a);
+    border-color: var(--accent-color-a) !important;
 }
 .btn-primary:hover {
     color: #fff;
-    background-color: #159a80;
-    border-color: #148f77;
+    background-color: var(--background-a);
 }
 .btn-primary:focus,
 .btn-primary.focus {
     color: #fff;
-    background-color: #159a80;
-    border-color: #148f77;
-    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -2642,13 +2638,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #148f77;
-    border-color: #12846e;
-}
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+    background-color: var(--accent-color-b);
 }
 
 .btn-secondary {
@@ -6354,6 +6344,29 @@ a.close.disabled {
 
 .bg-primary {
     background-color: var(--background-a) !important;
+}
+
+.bg-gradient {
+    background: -moz-linear-gradient(
+        0deg,
+        var(--accent-color-a) 0%,
+        var(--accent-color-b) 100%
+    );
+    background: -webkit-linear-gradient(
+        0deg,
+        var(--accent-color-a) 0%,
+        var(--accent-color-b) 100%
+    );
+    background: -ms-linear-gradient(
+        0deg,
+        var(--accent-color-a) 0%,
+        var(--accent-color-b) 100%
+    );
+    background: linear-gradient(
+        45deg,
+        var(--accent-color-a) 0%,
+        var(--accent-color-b) 100%
+    );
 }
 
 a.bg-primary:hover,
@@ -10141,7 +10154,7 @@ a.text-dark:focus {
 }
 
 .text-muted {
-    color: #6c757d !important;
+    color: #adadad !important;
 }
 
 .text-black-50 {
@@ -10385,16 +10398,26 @@ a.text-dark:focus {
     border-radius: 0.5rem;
     overflow: hidden;
 }
+
+#portfolio{
+padding-bottom:0px;
+}
+
 .portfolio .portfolio-item .portfolio-item-caption {
     position: absolute;
     top: 0;
     left: 0;
     transition: all 0.2s ease-in-out;
     opacity: 0;
-    background-color: rgba(26, 188, 156, 0.9);
 }
+
+.portfolio-item.mx-auto > img {
+    width: 332px;
+    height: 240px;
+}
+
 .portfolio .portfolio-item .portfolio-item-caption:hover {
-    opacity: 1;
+    opacity: 0.85;
 }
 .portfolio
     .portfolio-item
@@ -10413,15 +10436,21 @@ a.text-dark:focus {
         line-height: 2.5rem;
     }
 }
+
 .portfolio-modal .close {
     position: absolute;
     z-index: 1;
-    right: 1.5rem;
+    right: 1rem;
     top: 1rem;
-    font-size: 3rem;
-    line-height: 3rem;
-    color: var(--accent-color-b);
     opacity: 1;
+    color: white;
+    background-color: var(--accent-color-a);
+    border-color: var(--accent-color-a) !important;
+    border: 2px solid;
+    padding: 5px 13px 8px 13px;
+}
+.portfolio-modal .close:hover {
+    background-color: var(--background-a);
 }
 
 .floating-label-form-group {
@@ -10532,14 +10561,14 @@ form .row:first-child .floating-label-form-group {
     position: absolute;
     z-index: 100;
     left: 0;
-    width: 80px;
-    height: 80px;
-    margin-left: 0;
+    width: 25px;
+    height: 25px;
+    margin-left: 27.4px;
     text-align: center;
     color: white;
     border: 7px solid #e9ecef;
     border-radius: 100%;
-    background-color: #fed136;
+    background-color: var(--accent-color-b);
 }
 .timeline > li .timeline-image h4 {
     font-size: 10px;
@@ -10594,9 +10623,9 @@ form .row:first-child .floating-label-form-group {
     }
     .timeline > li .timeline-image {
         left: 50%;
-        width: 100px;
-        height: 100px;
-        margin-left: -50px;
+        width: 25px;
+        height: 25px;
+        margin-left: -13.5px;
     }
     .timeline > li .timeline-image h4 {
         font-size: 13px;
@@ -10617,9 +10646,9 @@ form .row:first-child .floating-label-form-group {
         padding: 0 20px 20px;
     }
     .timeline > li .timeline-image {
-        width: 150px;
-        height: 150px;
-        margin-left: -75px;
+        width: 25px;
+        height: 25px;
+        margin-left: -13.5px;
     }
     .timeline > li .timeline-image h4 {
         font-size: 18px;
@@ -10638,9 +10667,9 @@ form .row:first-child .floating-label-form-group {
         padding: 0 20px 20px 100px;
     }
     .timeline > li .timeline-image {
-        width: 170px;
-        height: 170px;
-        margin-left: -85px;
+        width: 25px;
+        height: 25px;
+        margin-left: -13.5px;
     }
     .timeline > li .timeline-image h4 {
         margin-top: 40px;
@@ -10651,8 +10680,8 @@ form .row:first-child .floating-label-form-group {
 }
 
 .filter-button {
-    font-size: 18px;
-    color:white;
+    font-size: 15px;
+    color: white;
     border: 1px solid var(--accent-color-b);
     border-radius: 5px;
     text-align: center;
@@ -10662,7 +10691,6 @@ form .row:first-child .floating-label-form-group {
 }
 
 .filter-button:hover {
-    font-size: 18px;
     border: 1px solid var(--accent-color-b);
     border-radius: 5px;
     text-align: center;

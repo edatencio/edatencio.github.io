@@ -8,9 +8,9 @@ const PortfolioModal = (props) =>
             <div className="modal-dialog modal-xl" role="document">
                 <div className="modal-content">
 
-                    <button className="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <button className="close btn" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">
-                            <i className="fas fa-times" />
+                            <i className="fas fa-times fa-xs" />
                         </span>
                     </button>
 
