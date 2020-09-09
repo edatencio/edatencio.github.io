@@ -8,7 +8,7 @@ const Carousel = (props) =>
         className += (index === 0) ? " active" : "";
 
         return (
-            <div className={className}>
+            <div className={className} key={img}>
                 <img className="d-block w-100" src={img} alt="" />
             </div>
 
@@ -29,14 +29,16 @@ const Carousel = (props) =>
                 {images}
             </div>
             <a className="carousel-control-prev" href={"#" + props.id} role="button" data-slide="prev" >
-                <span className="carousel-control-prev-icon" aria-hidden="true" />
+                <div className="rounded-circle">
+                    <span className="carousel-control-prev-icon" aria-hidden="true" />
+                </div>
                 <span className="sr-only">Previous</span>
             </a>
             <a className="carousel-control-next" href={"#" + props.id} role="button" data-slide="next" >
                 <span className="carousel-control-next-icon" aria-hidden="true" />
                 <span className="sr-only">Next</span>
             </a>
-        </div>
+        </div >
     );
 };
 

@@ -4,9 +4,9 @@ import PortfolioItem from "./PortfolioItem";
 
 const Portfolio = () =>
 {
-    const portfolioItems = Object.keys(PortfolioData).map((key) =>
+    const portfolioItems = Object.keys(PortfolioData).map((key, index) =>
     {
-        return <PortfolioItem item={PortfolioData[key]} />;
+        return <PortfolioItem item={PortfolioData[key]} key={"portfolioItem" + index} />;
     });
 
     return (

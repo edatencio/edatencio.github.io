@@ -2,7 +2,10 @@ import React from "react";
 
 const TimelineItem = (props) =>
 {
-    const lines = props.item.description.map((line) => <p className="text-muted">{line}</p>);
+    const lines = props.item.description.map((line, index) =>
+    {
+        return <p className="text-muted" key={props.item.id + "Line" + index}>{line}</p>;
+    });
 
     return (
         <li className={props.inverted ? "timeline-inverted" : ""} id={props.item.id}>

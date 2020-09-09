@@ -5,10 +5,10 @@ const Timeline = (props) =>
 {
     let inverted = true;
 
-    const items = Object.keys(props.data).map((key) =>
+    const items = Object.keys(props.data).map((key, index) =>
     {
         inverted = !inverted;
-        return <TimelineItem item={props.data[key]} inverted={inverted} />;
+        return <TimelineItem item={props.data[key]} inverted={inverted} key={"timeline" + props.label + index} />;
     });
 
     return (
