@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import Portfolio from "./Portfolio";
 import Timeline from "./Timeline";
-import About from "./About";
+import Summary from "./Summary";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Copyright from "./Copyright";
@@ -20,7 +20,7 @@ const App = () =>
             <Portfolio />
             <Timeline label="Experience" data={ExperienceData} />
             {/* <Timeline label="Education" /> */}
-            <About />
+            <Summary />
             {/* <Contact /> */}
             {/* <Footer /> */}
             <Copyright />
