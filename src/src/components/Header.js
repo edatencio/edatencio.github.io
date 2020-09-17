@@ -1,4 +1,5 @@
 import React from "react";
+import Contact from "./Contact";
 
 const Header = () =>
 {
@@ -18,6 +19,10 @@ const Header = () =>
                 {/* Masthead Subheading */}
                 <hr />
                 <p className="masthead-subheading font-weight-light mb-0">Unity 3D & Front End Developer</p>
+                <div className="divider-custom divider-light">
+                    <div className="divider-custom-line"></div>
+                </div>
+                <Contact />
             </div>
         </header>
     );

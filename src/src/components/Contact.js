@@ -3,57 +3,30 @@ import React from "react";
 const Contact = () =>
 {
     return (
-        <section className="page-section" id="contact">
-            <div className="container">
-                {/* Contact Section Heading*/}
-                <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                {/* Icon Divider*/}
-                <div className="divider-custom">
-                    <div className="divider-custom-line" />
-                    <div className="divider-custom-icon"><i className="fas fa-star" /></div>
-                    <div className="divider-custom-line" />
-                </div>
-                {/* Contact Section Form*/}
+        <div className="w-100" id="contact">
+            <section className="container contact mt-5" >
                 <div className="row">
-                    <div className="col-lg-8 mx-auto">
-                        {/* To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.*/}
-                        <form id="contactForm" name="sentMessage" noValidate="novalidate">
-                            <div className="control-group">
-                                <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Name</label>
-                                    <input className="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />
-                                    <p className="help-block text-danger" />
-                                </div>
+                    <div className="col-lg ml-auto mb-3">
+                        <h5>Contact me!</h5>
+                        <p className="text-muted"><i className="fas fa-envelope mr-2"></i><a href="mailto:ed.atencio16@gmail.com">hello@edatencio.com</a></p>
+                        <p className="text-muted"><i className="fas fa-map-marker mr-2"></i>Bogota, Colombia</p>
+                        <div className="row">
+
+                            <div className="col-lg">
+                                <a className="btn-primary btn-social rounded" href="https://github.com/edatencio"><i className="fab fa-github"></i></a>
+                                <a className="btn-primary btn-social rounded" href="https://www.linkedin.com/in/edatencio"><i className="fab fa-linkedin"></i></a>
+                                <a className="btn-primary btn-social rounded" href="https://twitter.com/ed_atencio"><i className="fab fa-twitter"></i></a>
                             </div>
-                            <div className="control-group">
-                                <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Email Address</label>
-                                    <input className="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
-                                    <p className="help-block text-danger" />
-                                </div>
-                            </div>
-                            <div className="control-group">
-                                <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Phone Number</label>
-                                    <input className="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
-                                    <p className="help-block text-danger" />
-                                </div>
-                            </div>
-                            <div className="control-group">
-                                <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Message</label>
-                                    <textarea className="form-control" id="message" rows={5} placeholder="Message" required="required" data-validation-required-message="Please enter a message." defaultValue={""} />
-                                    <p className="help-block text-danger" />
-                                </div>
-                            </div>
-                            <br />
-                            <div id="success" />
-                            <div className="form-group"><button className="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
-                        </form>
+                        </div>
+                    </div>
+                    <div className="col-lg mr-auto">
+                        <h5>Download CV</h5>
+                        <a className="btn btn-primary w-70px" href="https://github.com/edatencio/edatencio.github.io/raw/master/cv/Edward_Atencio_CV_en.pdf">PDF</a>
+                        <a className="btn btn-primary w-70px" href="https://github.com/edatencio/edatencio.github.io/raw/master/cv/Edward_Atencio_CV_en.doc">DOC</a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     );
 };
 
