@@ -10,6 +10,7 @@ import Copyright from "./Copyright";
 import ScrollToTop from "./ScrollToTop";
 
 import ExperienceData from "../data/ExperienceData";
+import EducationData from "../data/EducationData";
 
 const App = () =>
 {
@@ -19,6 +20,7 @@ const App = () =>
             <Header />
             <Portfolio />
             <Timeline label="Experience" data={ExperienceData} />
+            <Timeline label="Education" data={EducationData} />
             {/* <Timeline label="Education" /> */}
             <Summary />
             {/* <Contact /> */}
