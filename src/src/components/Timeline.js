@@ -12,7 +12,7 @@ const Timeline = (props) =>
     });
 
     return (
-        <section className="page-section bg-secondary" id="about">
+        <section className="page-section bg-secondary" id={"timeline" + props.label}>
             <div className="container">
                 {/* Portfolio Section Heading */}
                 <h2 className="page-section-heading text-center mb-0">{props.label}</h2>
