@@ -49,7 +49,7 @@ body {
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 390;
     line-height: 1.5;
     color: white;
     text-align: left;
@@ -156,7 +156,7 @@ a {
     background-color: transparent;
 }
 a:hover {
-    color: #117964;
+    color: var(--accent-color-b);
     text-decoration: underline;
 }
 
@@ -444,6 +444,11 @@ mark,
 .mark {
     padding: 0.2em;
     background-color: #fcf8e3;
+}
+
+.hide {
+    color: transparent !important;
+    transition: color 0.15s ease-in-out !important;
 }
 
 .list-unstyled {
@@ -2616,17 +2621,40 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: var(--accent-color-a);
-    border-color: var(--accent-color-a) !important;
+    color: white;
+    border: 2px solid var(--accent-color-a) !important;
+    margin: 5px;
+    background: none;
+    background-color: var(--background-a);
 }
 .btn-primary:hover {
-    color: #fff;
-    background-color: var(--background-a);
+    color: white;
+    background: -moz-linear-gradient(
+        0deg,
+        var(--accent-color-a) 0%,
+        var(--accent-color-b) 100%
+    );
+    background: -webkit-linear-gradient(
+        0deg,
+        var(--accent-color-a) 0%,
+        var(--accent-color-b) 100%
+    );
+    background: -ms-linear-gradient(
+        0deg,
+        var(--accent-color-a) 0%,
+        var(--accent-color-b) 100%
+    );
+    background: linear-gradient(
+        45deg,
+        var(--accent-color-a) 0%,
+        var(--accent-color-b) 100%
+    );
 }
 .btn-primary:focus,
 .btn-primary.focus {
     color: #fff;
+    background: none;
+    background-color: var(--background-a);
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -4641,26 +4669,38 @@ input[type="button"].btn-block {
 }
 #mainNav .navbar-brand {
     color: #fff;
+    transition: color 0.15s ease-in-out !important;
 }
 #mainNav .navbar-nav {
     margin-top: 1rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
     color: #fff;
+    font-weight: 400;
+    border: 2px solid transparent;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: var(--accent-color-b);
+    border: 2px solid var(--background-a);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
 #mainNav .navbar-nav li.nav-item a.nav-link:focus {
     color: #fff;
 }
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: var(--accent-color-b);
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    text-align: center;
 }
-#mainNav .navbar-toggler {
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    background: var(--background-c);
+}
+#mainNav .navbar-toggler,
+#mainNav .navbar-toggler:active {
     font-size: 80%;
     padding: 0.8rem;
+    border: 2px solid var(--background-a);
+    background-color: var(--background-a) !important;
+}
+#mainNav .navbar-toggler:hover {
+    background-color: var(--accent-color-a) !important;
 }
 
 @media (min-width: 992px) {
@@ -4684,7 +4724,6 @@ input[type="button"].btn-block {
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
         color: #fff;
-        background: var(--accent-color-b);
     }
 
     #mainNav.navbar-shrink {
@@ -4692,7 +4731,7 @@ input[type="button"].btn-block {
         padding-bottom: 0.5rem;
     }
     #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 }
 
@@ -7710,6 +7749,10 @@ button.bg-dark:focus {
     box-shadow: none !important;
 }
 
+.w-70px {
+    width: 70px;
+}
+
 .w-25 {
     width: 25% !important;
 }
@@ -10340,11 +10383,10 @@ a.text-dark:focus {
 }
 
 .btn-social {
-    border-radius: 100%;
     display: inline-flex;
-    width: 3.25rem;
-    height: 3.25rem;
-    font-size: 1.25rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -10390,6 +10432,11 @@ a.text-dark:focus {
         font-size: 2rem;
     }
 }
+
+.contact {
+    width: 70%;
+}
+
 .portfolio .portfolio-item {
     cursor: pointer;
     position: relative;
@@ -10399,8 +10446,8 @@ a.text-dark:focus {
     overflow: hidden;
 }
 
-#portfolio{
-padding-bottom:0px;
+#portfolio {
+    padding-bottom: 0px;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -10412,7 +10459,7 @@ padding-bottom:0px;
 }
 
 .portfolio-item.mx-auto > img {
-    width: 332px;
+    width: 400px;
     height: 240px;
 }
 
@@ -10451,6 +10498,12 @@ padding-bottom:0px;
 }
 .portfolio-modal .close:hover {
     background-color: var(--background-a);
+}
+
+.carousel,
+.carousel-inner .carousel-item img {
+    height:55vh;
+    object-fit: contain;
 }
 
 .floating-label-form-group {

@@ -14,7 +14,7 @@ const TimelineItem = (props) =>
             </div>
             <div className="timeline-panel">
                 <div className="timeline-heading">
-                    <h3 className="subheading">{props.item.title}</h3>
+                    <h5 className="subheading">{props.item.title}</h5>
                 </div>
                 <div className="timeline-body">
                     {lines}
