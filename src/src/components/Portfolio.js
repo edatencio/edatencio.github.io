@@ -26,7 +26,7 @@ const Portfolio = () =>
                 <div align="center">
                     <button className="btn btn-primary filter-button" data-filter="all">All</button>
                     <button className="btn btn-primary filter-button" data-filter="Unity">Unity</button>
-                    {/* <button className="btn btn-primary filter-button" data-filter="React">React</button> */}
+                    <button className="btn btn-primary filter-button" data-filter="React">React</button>
                     <button className="btn btn-primary filter-button" data-filter="Other">Other</button>
                 </div>
 
