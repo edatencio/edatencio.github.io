@@ -21,8 +21,8 @@ const Contact = () =>
                     </div>
                     <div className="col-lg mr-auto">
                         <h5>Download CV</h5>
-                        <a className="btn btn-primary w-70px" href="https://github.com/edatencio/edatencio.github.io/raw/master/cv/Edward_Atencio_CV_en.pdf">PDF</a>
-                        <a className="btn btn-primary w-70px" href="https://github.com/edatencio/edatencio.github.io/raw/master/cv/Edward_Atencio_CV_en.doc">DOC</a>
+                        <a className="btn btn-primary w-70px" href="assets/cv/Edward_Atencio_CV_en.pdf" download>PDF</a>
+                        <a className="btn btn-primary w-70px" href="assets/cv/Edward_Atencio_CV_en.doc" download>DOC</a>
                     </div>
                 </div>
             </section>
